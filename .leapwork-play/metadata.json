@@ -1,230 +1,33 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-05T12:51:09.447Z",
+  "generatedAt": "2026-08-06T07:04:45.730Z",
   "repo": {
-    "connectorId": 258,
+    "connectorId": 259,
     "repoSlug": "ProfessionalServices-LW/LW_PS_D365-FO",
     "baseBranch": "LW_Play_Aug2026"
   },
   "team": {
-    "assetId": 6611,
+    "assetId": 27825,
     "displayId": "TM-1",
-    "name": "My Team"
+    "name": "LW_PS_D365F&O"
   },
   "tree": [
     {
-      "assetId": 27186,
-      "displayId": "FD-4",
-      "name": "Test Scripts",
-      "kind": "folder",
-      "children": [
-        {
-          "assetId": 27633,
-          "displayId": "TC-6",
-          "name": "Filter Sales Order",
-          "kind": "test-case",
-          "repoPath": "Test Scripts/TC-6-Filter-Sales-Order.spec.ts"
-        },
-        {
-          "assetId": 27229,
-          "displayId": "TC-5",
-          "name": "ReadExcel",
-          "kind": "test-case",
-          "repoPath": "Test Scripts/TC-5-ReadExcel.spec.ts"
-        },
-        {
-          "assetId": 27194,
-          "displayId": "TC-2",
-          "name": "Sales Order",
-          "kind": "test-case",
-          "repoPath": "Test Scripts/TC-2-Sales-Order.spec.ts"
-        },
-        {
-          "assetId": 27214,
-          "displayId": "TC-3",
-          "name": "SalesOrder2",
-          "kind": "test-case",
-          "repoPath": "Test Scripts/TC-3-SalesOrder2.spec.ts"
-        },
-        {
-          "assetId": 27227,
-          "displayId": "TC-4",
-          "name": "SalesOrderSelfHeal",
-          "kind": "test-case",
-          "repoPath": "Test Scripts/TC-4-SalesOrderSelfHeal.spec.ts"
-        }
-      ]
-    },
-    {
-      "assetId": 27183,
-      "displayId": "FD-1",
-      "name": "Utilities",
-      "kind": "folder",
-      "children": [
-        {
-          "assetId": 27184,
-          "displayId": "FD-2",
-          "name": "Action",
-          "kind": "folder",
-          "children": [
-            {
-              "assetId": 27188,
-              "displayId": "TS-1",
-              "name": "AppToolBar",
-              "kind": "typescript",
-              "repoPath": "Utilities/Action/TS-1-AppToolBar.ts"
-            },
-            {
-              "assetId": 27189,
-              "displayId": "TS-2",
-              "name": "LauchAndLoginIntoD365",
-              "kind": "typescript",
-              "repoPath": "Utilities/Action/TS-2-LauchAndLoginIntoD365.ts"
-            },
-            {
-              "assetId": 27190,
-              "displayId": "TS-3",
-              "name": "Messages",
-              "kind": "typescript",
-              "repoPath": "Utilities/Action/TS-3-Messages.ts"
-            },
-            {
-              "assetId": 27191,
-              "displayId": "TS-4",
-              "name": "NavigateToModule",
-              "kind": "typescript",
-              "repoPath": "Utilities/Action/TS-4-NavigateToModule.ts"
-            },
-            {
-              "assetId": 27192,
-              "displayId": "TS-5",
-              "name": "ProcessingWaits",
-              "kind": "typescript",
-              "repoPath": "Utilities/Action/TS-5-ProcessingWaits.ts"
-            }
-          ]
-        },
-        {
-          "assetId": 27185,
-          "displayId": "FD-3",
-          "name": "Module",
-          "kind": "folder",
-          "children": [
-            {
-              "assetId": 27213,
-              "displayId": "TS-7",
-              "name": "SalesOrder2",
-              "kind": "typescript",
-              "repoPath": "Utilities/Module/TS-7-SalesOrder2.ts"
-            },
-            {
-              "assetId": 27193,
-              "displayId": "TS-6",
-              "name": "SalesOrderFunctions",
-              "kind": "typescript",
-              "repoPath": "Utilities/Module/TS-6-SalesOrderFunctions.ts"
-            }
-          ]
-        }
-      ]
+      "assetId": 27933,
+      "displayId": "TC-1",
+      "name": "New test case",
+      "kind": "test-case",
+      "repoPath": "TC-1-New-test-case.spec.ts"
     }
   ],
   "files": [
     {
-      "assetId": 27194,
+      "assetId": 27933,
       "assetKind": "test-case",
-      "displayId": "TC-2",
-      "name": "Sales Order",
-      "repoPath": "Test Scripts/TC-2-Sales-Order.spec.ts",
-      "parentAssetId": 27186
-    },
-    {
-      "assetId": 27214,
-      "assetKind": "test-case",
-      "displayId": "TC-3",
-      "name": "SalesOrder2",
-      "repoPath": "Test Scripts/TC-3-SalesOrder2.spec.ts",
-      "parentAssetId": 27186
-    },
-    {
-      "assetId": 27227,
-      "assetKind": "test-case",
-      "displayId": "TC-4",
-      "name": "SalesOrderSelfHeal",
-      "repoPath": "Test Scripts/TC-4-SalesOrderSelfHeal.spec.ts",
-      "parentAssetId": 27186
-    },
-    {
-      "assetId": 27229,
-      "assetKind": "test-case",
-      "displayId": "TC-5",
-      "name": "ReadExcel",
-      "repoPath": "Test Scripts/TC-5-ReadExcel.spec.ts",
-      "parentAssetId": 27186
-    },
-    {
-      "assetId": 27633,
-      "assetKind": "test-case",
-      "displayId": "TC-6",
-      "name": "Filter Sales Order",
-      "repoPath": "Test Scripts/TC-6-Filter-Sales-Order.spec.ts",
-      "parentAssetId": 27186
-    },
-    {
-      "assetId": 27188,
-      "assetKind": "typescript",
-      "displayId": "TS-1",
-      "name": "AppToolBar",
-      "repoPath": "Utilities/Action/TS-1-AppToolBar.ts",
-      "parentAssetId": 27184
-    },
-    {
-      "assetId": 27189,
-      "assetKind": "typescript",
-      "displayId": "TS-2",
-      "name": "LauchAndLoginIntoD365",
-      "repoPath": "Utilities/Action/TS-2-LauchAndLoginIntoD365.ts",
-      "parentAssetId": 27184
-    },
-    {
-      "assetId": 27190,
-      "assetKind": "typescript",
-      "displayId": "TS-3",
-      "name": "Messages",
-      "repoPath": "Utilities/Action/TS-3-Messages.ts",
-      "parentAssetId": 27184
-    },
-    {
-      "assetId": 27191,
-      "assetKind": "typescript",
-      "displayId": "TS-4",
-      "name": "NavigateToModule",
-      "repoPath": "Utilities/Action/TS-4-NavigateToModule.ts",
-      "parentAssetId": 27184
-    },
-    {
-      "assetId": 27192,
-      "assetKind": "typescript",
-      "displayId": "TS-5",
-      "name": "ProcessingWaits",
-      "repoPath": "Utilities/Action/TS-5-ProcessingWaits.ts",
-      "parentAssetId": 27184
-    },
-    {
-      "assetId": 27193,
-      "assetKind": "typescript",
-      "displayId": "TS-6",
-      "name": "SalesOrderFunctions",
-      "repoPath": "Utilities/Module/TS-6-SalesOrderFunctions.ts",
-      "parentAssetId": 27185
-    },
-    {
-      "assetId": 27213,
-      "assetKind": "typescript",
-      "displayId": "TS-7",
-      "name": "SalesOrder2",
-      "repoPath": "Utilities/Module/TS-7-SalesOrder2.ts",
-      "parentAssetId": 27185
+      "displayId": "TC-1",
+      "name": "New test case",
+      "repoPath": "TC-1-New-test-case.spec.ts",
+      "parentAssetId": 27825
     }
   ]
 }
