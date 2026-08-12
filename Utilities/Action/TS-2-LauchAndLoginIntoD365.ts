@@ -1,4 +1,6 @@
 import { leapwork } from "./leapwork";
+import type { Page } from "@playwright/test";
+
 leapwork.configuration({
     enableSelfHeal: true,
     timeoutMs: 45000,
@@ -29,4 +31,19 @@ export async function launchAndLoginD365() {
             await page.waitForTimeout(5000);
         }
     return page;
+}
+
+export async function logoutFromD365() {
+        const userOptions = page.locator("[data-dyn-controlname=UserButton]");
+        await expect(userOptions).toHaveCount(1);
+         await page.mouse.move(0, 0);
+        await userOptions.click();
+
+        const signOut = page.locator("[data-dyn-controlname=SignOut]");
+        await expect(signOut).toHaveCount(1);
+        await page.mouse.move(0, 0);
+        await signOut.click({ force: true });
+});
+        
+});
 }

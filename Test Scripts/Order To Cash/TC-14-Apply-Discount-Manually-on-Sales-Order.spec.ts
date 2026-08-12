@@ -1,14 +1,18 @@
 import { leapwork } from "./leapwork";
 
-import { Lauch, launchAndLoginD365 } from "@assets/Utilities/Action/LauchAndLoginIntoD365";
+import { Lauch, launchAndLoginD365, logoutFromD365 } from "@assets/Utilities/Action/LauchAndLoginIntoD365";
 import { navigateToModule } from "@assets/Utilities/Action/NavigateToModule";
+import { addSalesOrderLine, createSalesOrder, confirmSalesOrder, pickingASalesOrder, postingASalesOrder, invoiceSalesOrder } from "@assets/Utilities/Module/SalesOrderFunctions";
 import { appToolBarButton, appToolBarTab, OptionsUnderAppToolBarTab } from "@assets/Utilities/Action/AppToolBar";
 import { waitUntilPleaseWaitgPopupDisappears, waitUntilProcessingOperationPopupDisappears } from "@assets/Utilities/Action/ProcessingWaits";
 import { validateMessage } from "@assets/Utilities/Action/Messages";
- import { addSalesOrderLine, createSalesOrder, confirmSalesOrder } from "@assets/Utilities/Module/SalesOrder2";
+import { clickButtonLabel } from "@assets/Utilities/Action/Buttons";
+import { getTableCellText } from "@assets/Utilities/Action/TableUtilities";
+
+//import { waitUntilPleaseWaitgPopupDisappears, waitUntilProcessingOperationPopupDisappears } from "@assets/Utilities/Action/ProcessingWaits";
 leapwork.configuration({
     enableSelfHeal: false,
-    timeoutMs: 45000,
+    timeoutMs: 15000,
 });
 
 // ai-studio-step-id: pw1nu49wy0
@@ -25,25 +29,24 @@ await leapwork.step("Navigate to Module", async () => {
 await leapwork.step("Create Sales Order", async () => {
      leapwork.variables.set("customerAccount","000002",leapwork.storage.LOCAL);
      await page.waitForTimeout(5000);
-
           await createSalesOrder(page);
 
 
 }, { action: "custom" });
 
-// ai-studio-step-id: pw10q9x930
+// ai-studio-step-id: pwataqy500
 await leapwork.step("Add Sales Order Line", async () => {
     
    await addSalesOrderLine(page,"000002","2","1","11","50");
+   const discountPercent = page.locator('[data-dyn-controlname="SalesLine_LinePercentGrid"] input',).last();
+        await expect(discountPercent).toBeVisible();
+        await discountPercent.fill("2.0");
+        await discountPercent.press("Tab");
+   await appToolBarButton("Save");
     
 }, { action: "custom" });
 
-// ai-studio-step-id: pwz1jv7y00
-await leapwork.step("Add Sales Order Line2", async () => {
-    
-   await addSalesOrderLine(page,"000002","10","1","11","20");
-    
-}, { action: "custom" });
+
 
 // ai-studio-step-id: pwthvgdh00
 await leapwork.step("Confirm Sales Order", async () => {
@@ -52,4 +55,7 @@ await leapwork.step("Confirm Sales Order", async () => {
  
 }, { action: "custom" });
 
-
+// ai-studio-step-id: pwl84vcr00
+await leapwork.step("Logout from D365", async () => {
+    await logoutFromD365();
+}, { action: "custom" });
