@@ -26,7 +26,7 @@ await leapwork.step("Navigate to Module", async () => {
 }, { action: "custom" });
 
 // ai-studio-step-id: pw1f3tk3e0
-await leapwork.step("Filter Sales Order \"${salesOrderNumber1}\" ", async () => { 
+await leapwork.step("Filter Sales Order \`${salesOrderNumber1}\` ", async () => { 
      console.log(salesOrderNumber1);
      await leapwork.d365.fno.grid.quickFilter(page, {
         columnName: "Sales order",

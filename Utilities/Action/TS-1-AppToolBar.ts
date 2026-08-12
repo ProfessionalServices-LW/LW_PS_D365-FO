@@ -2,8 +2,7 @@ import { expect, Page } from "@playwright/test";
 import { leapwork } from "./leapwork";
 
 export async function appToolBarButton(
-    page: Page,
-    buttonLabel: string,
+       buttonLabel: string,
 ): Promise<void> {
       const button = page.getByRole("button", {
             name: new RegExp(buttonLabel,"i"),
@@ -15,11 +14,10 @@ export async function appToolBarButton(
 }
 
 export async function appToolBarTab(
-    page: Page,
     visibleText: string,
 ): Promise<void> {
         const tab = page.getByRole("button", {
-            name: new RegExp(visibleText,"i"),
+            name: `${visibleText}`,
             exact: true,
         }).first();
 
@@ -28,7 +26,6 @@ export async function appToolBarTab(
 }
 
 export async function OptionsUnderAppToolBarTab(
-    page: Page,
     groupText: string,
     optionText: string,
 ): Promise<void> {
