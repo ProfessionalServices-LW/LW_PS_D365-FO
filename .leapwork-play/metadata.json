@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-12T06:15:01.539Z",
+  "generatedAt": "2026-08-31T08:06:51.223Z",
   "repo": {
     "connectorId": 258,
     "repoSlug": "ProfessionalServices-LW/LW_PS_D365-FO",
@@ -55,11 +55,33 @@
       "kind": "folder",
       "children": [
         {
+          "assetId": 33825,
+          "displayId": "FD-10",
+          "name": "New folder",
+          "kind": "folder",
+          "children": [
+            {
+              "assetId": 33826,
+              "displayId": "TC-20",
+              "name": "New test case",
+              "kind": "test-case",
+              "repoPath": "Test Scripts/New folder/TC-20-New-test-case.spec.ts"
+            }
+          ]
+        },
+        {
           "assetId": 27838,
           "displayId": "FD-7",
           "name": "Order To Cash",
           "kind": "folder",
           "children": [
+            {
+              "assetId": 31266,
+              "displayId": "TC-15",
+              "name": "Add or Remove Item from Sales Order",
+              "kind": "test-case",
+              "repoPath": "Test Scripts/Order To Cash/TC-15-Add-or-Remove-Item-from-Sales-Order.spec.ts"
+            },
             {
               "assetId": 29960,
               "displayId": "TC-14",
@@ -163,7 +185,7 @@
             {
               "assetId": 27189,
               "displayId": "TS-2",
-              "name": "LauchAndLoginIntoD365",
+              "name": "LaunchAndLoginIntoD365",
               "kind": "typescript",
               "repoPath": "Utilities/Action/TS-2-LauchAndLoginIntoD365.ts"
             },
@@ -204,6 +226,13 @@
           "kind": "folder",
           "children": [
             {
+              "assetId": 32614,
+              "displayId": "TS-16",
+              "name": "Business Date Generator",
+              "kind": "typescript",
+              "repoPath": "Utilities/Common/TS-16-Business-Date-Generator.ts"
+            },
+            {
               "assetId": 29276,
               "displayId": "TS-11",
               "name": "Generate",
@@ -219,11 +248,39 @@
           "kind": "folder",
           "children": [
             {
+              "assetId": 33837,
+              "displayId": "TS-17",
+              "name": "CreateAnItemFromReleasedProducts",
+              "kind": "typescript",
+              "repoPath": "Utilities/Module/TS-17-CreateAnItemFromReleasedProducts.ts"
+            },
+            {
               "assetId": 28157,
               "displayId": "TS-10",
               "name": "Customer",
               "kind": "typescript",
               "repoPath": "Utilities/Module/TS-10-Customer.ts"
+            },
+            {
+              "assetId": 33937,
+              "displayId": "TS-18",
+              "name": "New typescript",
+              "kind": "typescript",
+              "repoPath": "Utilities/Module/TS-18-New-typescript.ts"
+            },
+            {
+              "assetId": 31267,
+              "displayId": "TS-14",
+              "name": "ProductInfoManagement",
+              "kind": "typescript",
+              "repoPath": "Utilities/Module/TS-14-ProductInfoManagement.ts"
+            },
+            {
+              "assetId": 31935,
+              "displayId": "TS-15",
+              "name": "Products",
+              "kind": "typescript",
+              "repoPath": "Utilities/Module/TS-15-Products.ts"
             },
             {
               "assetId": 27213,
@@ -285,6 +342,14 @@
       "parentAssetId": 29390
     },
     {
+      "assetId": 33826,
+      "assetKind": "test-case",
+      "displayId": "TC-20",
+      "name": "New test case",
+      "repoPath": "Test Scripts/New folder/TC-20-New-test-case.spec.ts",
+      "parentAssetId": 33825
+    },
+    {
       "assetId": 29393,
       "assetKind": "test-case",
       "displayId": "TC-10",
@@ -322,6 +387,14 @@
       "displayId": "TC-14",
       "name": "Apply Discount Manually on Sales Order",
       "repoPath": "Test Scripts/Order To Cash/TC-14-Apply-Discount-Manually-on-Sales-Order.spec.ts",
+      "parentAssetId": 27838
+    },
+    {
+      "assetId": 31266,
+      "assetKind": "test-case",
+      "displayId": "TC-15",
+      "name": "Add or Remove Item from Sales Order",
+      "repoPath": "Test Scripts/Order To Cash/TC-15-Add-or-Remove-Item-from-Sales-Order.spec.ts",
       "parentAssetId": 27838
     },
     {
@@ -376,7 +449,7 @@
       "assetId": 27189,
       "assetKind": "typescript",
       "displayId": "TS-2",
-      "name": "LauchAndLoginIntoD365",
+      "name": "LaunchAndLoginIntoD365",
       "repoPath": "Utilities/Action/TS-2-LauchAndLoginIntoD365.ts",
       "parentAssetId": 27184
     },
@@ -429,6 +502,14 @@
       "parentAssetId": 29275
     },
     {
+      "assetId": 32614,
+      "assetKind": "typescript",
+      "displayId": "TS-16",
+      "name": "Business Date Generator",
+      "repoPath": "Utilities/Common/TS-16-Business-Date-Generator.ts",
+      "parentAssetId": 29275
+    },
+    {
       "assetId": 28157,
       "assetKind": "typescript",
       "displayId": "TS-10",
@@ -442,6 +523,38 @@
       "displayId": "TS-12",
       "name": "SalesQuotation",
       "repoPath": "Utilities/Module/TS-12-SalesQuotation.ts",
+      "parentAssetId": 27185
+    },
+    {
+      "assetId": 31267,
+      "assetKind": "typescript",
+      "displayId": "TS-14",
+      "name": "ProductInfoManagement",
+      "repoPath": "Utilities/Module/TS-14-ProductInfoManagement.ts",
+      "parentAssetId": 27185
+    },
+    {
+      "assetId": 31935,
+      "assetKind": "typescript",
+      "displayId": "TS-15",
+      "name": "Products",
+      "repoPath": "Utilities/Module/TS-15-Products.ts",
+      "parentAssetId": 27185
+    },
+    {
+      "assetId": 33837,
+      "assetKind": "typescript",
+      "displayId": "TS-17",
+      "name": "CreateAnItemFromReleasedProducts",
+      "repoPath": "Utilities/Module/TS-17-CreateAnItemFromReleasedProducts.ts",
+      "parentAssetId": 27185
+    },
+    {
+      "assetId": 33937,
+      "assetKind": "typescript",
+      "displayId": "TS-18",
+      "name": "New typescript",
+      "repoPath": "Utilities/Module/TS-18-New-typescript.ts",
       "parentAssetId": 27185
     },
     {
